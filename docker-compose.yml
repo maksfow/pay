@@ -20,7 +20,7 @@ services:
       - --port=2627
     depends_on:
       - database
-
 volumes:
   postgres_data:
+
 
