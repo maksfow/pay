@@ -4,6 +4,7 @@ FROM python:latest
 WORKDIR /pythonProjectpaysyst
 # Копируем наш проект внутри Docker
 COPY . /pythonProjectpaysyst
+RUN pip install  uvicorn
 # Установка библиотек
 RUN pip install -r requirements.txt
 # Запуск проекта
